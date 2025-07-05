@@ -1,0 +1,11 @@
+body {
+  min-height: 200vh;
+  background-color: #000000;
+  color: #CEFDFE;
+}
+
+.textAlignment {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    padding: 35vh 0;
+}
