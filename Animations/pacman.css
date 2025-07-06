@@ -1,0 +1,56 @@
+.pacmanAnim {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pacman {
+  width: 5em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side,#000 98%,#0000) 1.7em 0.61em/.8em .8em no-repeat,  
+    #ffee00;
+  box-shadow: .2em -.6em 1.2em 0em inset rgba(0, 0, 0, 0.7);
+  animation: 
+    move-pacman 3s linear infinite,
+    l4 .5s infinite steps(7) alternate;
+  z-index: 999;
+}
+
+.pellet {
+  margin-top: 2em;
+  position: absolute;
+  margin-left: .4em;
+  width: 1em;
+  height: 1em;
+  background-color: #fb0;
+  border-radius: 50%;
+}
+
+.p1 {
+  margin-left: 8em;
+}
+
+.p2 {
+  margin-left: 15em;
+}
+
+@keyframes move-pacman {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(16em);
+  }
+}
+
+@keyframes l4 {
+ 
+  0% {
+    clip-path: polygon(50% 50%,100% 0,100% 0,0 0,0 100%,100% 100%,100% 100%)
+  }
+
+  100% {
+    clip-path: polygon(50% 50%,100% 65%,100% 0,0 0,0 100%,100% 100%,100%  35%)
+  }
+}

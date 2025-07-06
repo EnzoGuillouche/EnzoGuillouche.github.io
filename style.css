@@ -7,5 +7,4 @@ body {
 .textAlignment {
     display: flex;
     justify-content: center; /* center horizontally */
-    padding: 35vh 0;
 }
