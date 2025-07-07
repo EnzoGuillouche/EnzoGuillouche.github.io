@@ -1,60 +1,58 @@
-let pacman = document.getElementsByClassName(`pacman`)[0];
+import { checkPellets, resetPellets } from './pellets.js';
 
-let pellets = [];
-pellets.push(document.getElementsByClassName(`p1`)[0]);
-pellets.push(document.getElementsByClassName(`p2`)[0]);
+const pacman = document.querySelector('.pacman');
+let pacmanDirection = 1; // 0 = top, 1 = right, 2 = bottom, 3 = left
 
-function getPacmanWidth() {
-    const pacmanStyle = window.getComputedStyle(pacman);
-    const fontSize = parseFloat(pacmanStyle.fontSize); // px value of 1em
-    return 2.5 * fontSize; // 2.5 which is the pacman object width in the css
+let pacmanPos = [0, 0];
+let maxMovement = 15;
+
+function getRotationDeg() {
+    switch (pacmanDirection) {
+        case 0: return -90; // up
+        case 1: return 0;   // right
+        case 2: return 90;  // down
+        case 3: return 180; // left
+    }
 }
 
-function checkPellets() {
-    let pacObj = pacman.getBoundingClientRect();
-    let pacX = pacObj.left + window.scrollX;
+function updatePacmanTransform() {
+    const x = pacmanPos[0];
+    const y = pacmanPos[1];
+    const angle = getRotationDeg();
 
-    const pacmanWidth = getPacmanWidth();
-
-    pellets.slice().forEach((pellet, index) => {
-        if (!pellet) return;
-
-        let pelletObj = pellet.getBoundingClientRect();
-        let pelletX = pelletObj.left + window.scrollX;
-
-        if (pacX + pacmanWidth >= pelletX) {
-            console.log(`ate a pellet`);
-            pellet.remove();
-            pellets.splice(index, 1);
-        }
-    });
+    pacman.style.transition = 'transform 3s linear';
+    pacman.style.transform = `translate(${x}em, ${y}em) rotate(${angle}deg)`;
 }
 
-function resetPellets() {
-    // recreate pellets in the DOM
-    const container = document.querySelector('.pacmanAnim') || document.body;
-
-    const p1 = document.createElement('div');
-    p1.className = 'pellet p1';
-    container.appendChild(p1);
-
-    const p2 = document.createElement('div');
-    p2.className = 'pellet p2';
-    container.appendChild(p2);
-
-    pellets = [p1, p2];
+function animate() {
+    
+    switch (pacmanDirection) {
+        case 0: pacmanPos[1] -= maxMovement; break; // up
+        case 1: pacmanPos[0] += maxMovement; break; // right
+        case 2: pacmanPos[1] += maxMovement; break; // down
+        case 3: pacmanPos[0] -= maxMovement; break; // left
+    }
+    updatePacmanTransform();
 }
 
 function setupAnimationListener() {
-    pacman.addEventListener('animationiteration', (event) => {
-        if (event.animationName === 'move-pacman') {
-            console.log(`'move-pacman' looped — resetting pellets`);
-            resetPellets();
-        }
+    pacman.addEventListener('transitionend', () => {
+        // resetPellets();
+        pacmanDirection = (pacmanDirection + 1) % 4;
+
+        const x = pacmanPos[0];
+        const y = pacmanPos[1];
+        const angle = getRotationDeg();
+
+        pacman.style.transition = 'none';
+        pacman.style.transform = `translate(${x}em, ${y}em) rotate(${angle}deg)`;
+
+        setTimeout(animate, 1);
     });
 }
 
 export function animatePacman() {
     setupAnimationListener();
-    setInterval(checkPellets, 100); 
+    setTimeout(animate, 1);
+    setInterval(checkPellets, 100);
 }

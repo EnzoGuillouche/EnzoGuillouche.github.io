@@ -1,5 +1,6 @@
 @import url("../style.css");
 @import url("../Animations/pacman.css");
+@import url("../Animations/pellet.css");
 
 #titlePhrase {
     padding-top: 35vh;
