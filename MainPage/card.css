@@ -1,0 +1,15 @@
+.card {
+  background-color: #CEFDFE;
+  border-radius: 15%;
+  position: relative;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem 1rem;
+  margin: 0.5rem;
+
+  font-size: 1.5rem;
+  color: #51a6a7;
+}
