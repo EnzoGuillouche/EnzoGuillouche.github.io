@@ -37,7 +37,7 @@ function animate() {
 
 function setupAnimationListener() {
     pacman.addEventListener('transitionend', () => {
-        // resetPellets();
+        if (pacmanDirection === 0) resetPellets(pacman);
         pacmanDirection = (pacmanDirection + 1) % 4;
 
         const x = pacmanPos[0];

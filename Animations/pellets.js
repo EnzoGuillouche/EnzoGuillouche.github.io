@@ -35,25 +35,19 @@ export function checkPellets() {
   });
 }
 
-export function resetPellets() {
-  for (let i = 0; i < pellets.length; i++) {
-    const pellet = pellets[i];
-    pellet.remove();
-    pellets.splice(i, 1);
-  }
-
+export function resetPellets(pacman) {
   const container = document.querySelector('.pacmanAnim');
-  let p1 = document.createElement('div');
-  p1.className = 'pellet p1';
-  container.appendChild(p1);
 
-  let p2 = document.createElement('div');
-  p2.className = 'pellet p2';
-  container.appendChild(p2);
+  // empty the container
+  container.innerHTML = '';
 
-  let p3 = document.createElement('div');
-  p2.className = 'pellet p3';
-  container.appendChild(p3);
+  // then reassign everything
+  container.appendChild(pacman);
 
-  pellets = [p1, p2, p3];
+  for (let i = 1; i <= 12; i++) {
+    const pellet = document.createElement('div');
+    pellet.className = `pellet p${i}`;
+    container.appendChild(pellet);
+    pellets.push(pellet);
+  }
 }
