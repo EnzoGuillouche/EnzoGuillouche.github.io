@@ -8,3 +8,8 @@ body {
     display: flex;
     justify-content: center; /* center horizontally */
 }
+
+.bold {
+  font-weight: bold;
+  font-size: 2.5vw;
+}

@@ -3,7 +3,8 @@
   border-radius: 15%;
   position: relative;
 
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -12,4 +13,7 @@
 
   font-size: 1.5rem;
   color: #51a6a7;
+  text-align: center;
+  max-width: 25vw;
+  max-height: 50vh;
 }
