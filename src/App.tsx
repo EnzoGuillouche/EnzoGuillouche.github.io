@@ -1,27 +1,18 @@
-import React from 'react';
 import './App.css';
-import Book from './Book/Book';
+import BookContainer from './Book/BookContainer';
+import Header from './Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Welcome to my portfolio!
-        </p>
-      </header>
-      <div className="Book-Container">
-        <Book 
-          title="Pac-ssembly"
-          description="The project is dedicated to recreating the original Pac-man game in x86 16-bit NASM Assembly."
-          linkToRepo="https://github.com/Woopsie-Creations/Arcade-games/tree/main/Games/Pac-ssembly"
-        />
-        <Book 
-          title="Path Quick"
-          description="This project aims to create a software tool that calculates the fastest route between two landmarks, handling large datasets efficiently."
-          linkToRepo="https://github.com/algosup/2024-2025-project-3-quickest-path-team-6"
-        />
-      </div>
+      <Header/>
+      
+      <p className="App-subheadline">
+        I’m a passionate software developer, with a strong curiosity for technology and a deep enthusiasm for creating innovative projects.
+      </p>
+
+      <BookContainer/>
+
     </div>
   );
 }

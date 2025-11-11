@@ -9,23 +9,11 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vh;
   pointer-events: none;
 }
 
-.App-header {
-  min-height: 25vh;
-  flex-direction: row;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.Book-Container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
+.App-subheadline {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
