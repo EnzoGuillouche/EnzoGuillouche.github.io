@@ -1,0 +1,7 @@
+.DS_Store/
+node_modules
+.env
+.vs_code/
+dist/
+build/
+package-lock.json
