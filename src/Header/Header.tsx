@@ -3,6 +3,7 @@ import './Header.css';
 function Header() {
     return (
         <header className="App-header">
+        <img className="App-img" src="./../../enzoimg.png" alt="EnzoImg" />
         <p className="App-headline">
           Challenge-oriented Full-Stack Developer
         </p>

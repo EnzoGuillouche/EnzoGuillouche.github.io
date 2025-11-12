@@ -1,10 +1,25 @@
 .App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
   min-height: 25vh;
   flex-direction: row;
+  text-align: center;
+  position: relative;
+}
+
+.App-img {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: rotate(15deg);
+  pointer-events: none;
 }
 
 .App-headline {
   font-weight: bold;
   font-size: 3rem;
-  margin-bottom: 2rem;
+  text-align: center;
 }

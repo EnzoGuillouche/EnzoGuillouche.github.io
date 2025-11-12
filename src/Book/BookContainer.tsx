@@ -12,7 +12,7 @@ function BookContainer() {
         <Book 
           title="Path Quick"
           description="This project aims to create a software tool that calculates the fastest route between two landmarks, handling large datasets efficiently."
-          linkToRepo="https://github.com/algosup/2024-2025-project-3-quickest-path-team-6"
+          linkToRepo="https://github.com/EnzoGuillouche/2024-2025-project-3-quickest-path-team-6"
         />
       </div>
     );
