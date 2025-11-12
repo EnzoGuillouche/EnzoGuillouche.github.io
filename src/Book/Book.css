@@ -35,6 +35,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 0.8rem;
+  text-align: center;
 }
 
 /* Hover animations */
@@ -59,8 +61,10 @@
 /* Typography */
 .Book-Title {
   font-weight: bold;
-  font-size: clamp(1rem, 2vw, 1.4rem); /* scales with viewport */
+  font-size: clamp(1rem, 2vw, 1.4rem);
   text-align: center;
+  word-wrap: break-word;
+  max-width: 90%;
 }
 
 .Book-Link {
@@ -79,11 +83,24 @@
   color: white;
 }
 
+.Book-Tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+
 @media (max-width: 900px) {
   .Book {
     width: clamp(180px, 40vw, 280px);
     height: clamp(220px, 40vh, 350px);
     font-size: clamp(1rem, 2vw, 1.3rem);
+  }
+
+  .Book-Title {
+    font-size: 1.2rem;
   }
 }
 
@@ -94,7 +111,11 @@
     min-height: 250px;
     font-size: clamp(0.9rem, 4vw, 1.2rem);
   }
-  .Cover,
+  .Cover {
+    padding: 0.8rem;
+    gap: 0.6rem;
+  }
+
   .Page {
     padding: 0.75rem;
   }
