@@ -9,6 +9,7 @@ function BookContainer() {
           description="The project is dedicated to recreating the original Pac-man game in x86 16-bit NASM Assembly."
           linkToRepo="https://github.com/Woopsie-Creations/Arcade-games/tree/main/Games/Pac-ssembly"
         />
+
         <Book 
           title="Path Quick"
           description="This project aims to create a software tool that calculates the fastest route between two landmarks, handling large datasets efficiently."

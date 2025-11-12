@@ -11,6 +11,8 @@ function App() {
         I’m a passionate software developer, with a strong curiosity for technology and a deep enthusiasm for creating innovative projects.
       </p>
 
+      <h2>My Projects</h2>
+
       <BookContainer/>
 
     </div>

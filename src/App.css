@@ -3,17 +3,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
   color: white;
   background-color: #282c34;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 20vh;
-  pointer-events: none;
+h2 {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .App-subheadline {
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin: 2rem 1rem 3rem 1rem;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* ---------- Responsive adjustments ---------- */
+@media (max-width: 600px) {
+  .App-subheadline {
+    font-size: 1rem;
+  }
 }
