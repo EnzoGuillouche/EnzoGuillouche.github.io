@@ -22,7 +22,7 @@ h1 {
 
 .Woop-img {
   width: 100%;
-  max-width: 60vw;
+  max-width: 80vw;
   height: auto;
   object-fit: contain;
   pointer-events: none;
@@ -46,7 +46,7 @@ h1 {
 
 .Woop-Arcade-Games-Images img {
     width: 100%;
-    max-width: 30vw;
+    max-width: 50vw;
     height: auto;
     object-fit: contain;
     pointer-events: none;
@@ -55,7 +55,13 @@ h1 {
 }
 
 @media (max-width: 600px) {
-  .Woop-img .Woop-Arcade-Games img {
+  .Woop-img {
     max-width: 90vw;
   }
+}
+
+@media (min-width: 768px) {
+    .Woop-Arcade-Games-Images img {
+        max-width: 30vw;
+    }
 }
