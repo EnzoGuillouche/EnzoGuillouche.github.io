@@ -1,0 +1,50 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
+  color: white;
+  background-color: #282c34;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.App-subheadline {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin: 2rem 1rem 3rem 1rem;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.App-Link {
+  margin-top: 1rem;
+  text-decoration: none;
+  background-color: #CEFDFE;
+  color: #51a6a7;
+  font-weight: bold;
+  border: 1px solid #51a6a7;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.App-Link:hover {
+  background-color: #51a6a7;
+  color: #CEFDFE;
+}
+
+/* ---------- Responsive adjustments ---------- */
+@media (max-width: 600px) {
+  .App-subheadline {
+    font-size: 1rem;
+  }
+}

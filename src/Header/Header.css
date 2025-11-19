@@ -1,0 +1,65 @@
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 2rem); /* scales gap */
+  min-height: 25vh;
+  flex-direction: row;
+  text-align: center;
+  position: relative;
+  flex-wrap: wrap; /* allows image + text to stack on small screens */
+  padding: 1rem;
+}
+
+.Header-img {
+  height: clamp(120px, 20vh, 200px);
+  width: clamp(120px, 20vh, 200px);
+  border-radius: 50%;
+  object-fit: cover;
+  transform: rotate(15deg);
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.App-headline {
+  font-weight: bold;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  text-align: center;
+  line-height: 1.2;
+  max-width: 90%;
+}
+
+@media (max-width: 900px) {
+  .App-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Header-img {
+    transform: rotate(10deg);
+  }
+
+  .App-headline {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 1rem;
+  }
+
+  .App-header {
+    gap: 1rem;
+  }
+
+  .Header-img {
+    height: 120px;
+    width: 120px;
+    transform: rotate(8deg);
+  }
+
+  .App-headline {
+    font-size: 1.8rem;
+  }
+}

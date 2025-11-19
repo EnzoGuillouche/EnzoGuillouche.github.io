@@ -1,0 +1,21 @@
+.Book-Container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem;
+}
+
+@media (max-width: 900px) {
+  .Book-Container {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .Book-Container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
