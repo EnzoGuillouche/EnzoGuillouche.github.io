@@ -1,0 +1,12 @@
+{
+  "title": "Développeur Full-Stack en quête de challenges",
+  "intro": "Je suis un développeur passionné, avec une forte curiosité pour la technologie dans tous ses domaines et un enthousiasme profond pour la création de projets innovants.",
+  "cv_button": "Mon CV",
+  "my_projects": "Mes Projets",
+  "woopsie_creations_holdup": "Mais ce n'est pas tout !",
+  "woopsie_creations_intro": "Avec des amis, nous avons co-fondé Woopsie Creations, un studio indépendant passionné de développement, de jeux et de logiciels.",
+  "woopsie_creations_arcade_games_intro": "Arcade-Games est un projet dédié à la création de jeux écrits en Assembleur x86 16 bits, développés avec NASM et exécutés avec DOSBox.",
+  "woopsie_creations_arcade_games_arcade_part_1": "Nous travaillons actuellement à la construction d'une arcade, qui proposera une collection de jeux.",
+  "woopsie_creations_arcade_games_arcade_part_2": "Elle est actuellement constituée d'une Rock Pi 4 Plus, où les jeux tournent sans accroc, et nous prévoyons de l'améliorer davantage avec des composants hardware, un système d'exploitation dédié et la possibilité pour quiconque d'ajouter leurs propres jeux (en Assembleur bien sûr).",
+  "woopsie_creations_arcade_games_game_list_intro": "Et voici une liste de jeux sur lesquels nous travaillons, en Assembleur x86 16 bits pur."
+}
