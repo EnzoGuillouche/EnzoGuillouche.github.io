@@ -1,0 +1,20 @@
+.Skill-Container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+@media (max-width: 900px) {
+  .Skill-Container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .Skill-Container {
+    gap: 1.5rem;
+  }
+}

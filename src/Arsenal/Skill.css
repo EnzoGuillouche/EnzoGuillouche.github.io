@@ -1,0 +1,31 @@
+.Skill {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    color: #CEFDFE;
+    border: 1px solid #51a6a7;
+    border-radius: 15%;
+    padding: 3%;
+    width: fit-content;
+    height: fit-content;
+    
+}
+
+.Skill-Name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Skill-Image {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .Skill {
+        border-radius: 10%;
+    }
+}

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import "./Modal.css";
 import BookTag from "./BookTag";
-import projectsData from "../data/projects.json";
+import { useTranslation } from "react-i18next";
 
 interface ModalProps {
   isOpen: boolean;
@@ -11,6 +11,9 @@ interface ModalProps {
 
 function Modal({ isOpen, onClose, projectId }: ModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
+
+  const { t } = useTranslation();
+  const project = t(`projects.${projectId}`, { returnObjects: true });
 
   // Close when clicking outside
   useEffect(() => {
@@ -32,28 +35,28 @@ function Modal({ isOpen, onClose, projectId }: ModalProps) {
 
         <div className="Modal-Content">
             <div className="Modal-Left">
-                <h2 className="Modal-Title">{projectsData[projectId].title}</h2>
-                <p className="Modal-Description">{projectsData[projectId].enhancedDescription}</p>
+                <h2 className="Modal-Title">{project.title}</h2>
+                <p className="Modal-Description">{project.enhancedDescription}</p>
 
                 <div className="Modal-Tags">
-                    {projectsData[projectId].technologiesUsed?.map((tag, i) => (
+                    {project.technologiesUsed?.map((tag, i) => (
                         <BookTag key={i} tag={tag} />
                     ))}
                 </div>
               
                 <a
                     className="Modal-Link"
-                    href={projectsData[projectId].linkToRepo}
+                    href={project.linkToRepo}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                View Repository
+                {t("view_repo_button")}
                 </a>
             </div>
 
             <div className="Modal-Right">
                <img
-                    src={projectsData[projectId].image}
+                    src={project.image}
                     className="Modal-Image"
                     alt={`Project Img`}
                 />

@@ -2,11 +2,175 @@
   "title": "Développeur Full-Stack en quête de challenges",
   "intro": "Je suis un développeur passionné, avec une forte curiosité pour la technologie dans tous ses domaines et un enthousiasme profond pour la création de projets innovants.",
   "cv_button": "Mon CV",
+  "tech_arsenal": "Arsenal Technique",
   "my_projects": "Mes Projets",
   "woopsie_creations_holdup": "Mais ce n'est pas tout !",
   "woopsie_creations_intro": "Avec des amis, nous avons co-fondé Woopsie Creations, un studio indépendant passionné de développement, de jeux et de logiciels.",
   "woopsie_creations_arcade_games_intro": "Arcade-Games est un projet dédié à la création de jeux écrits en Assembleur x86 16 bits, développés avec NASM et exécutés avec DOSBox.",
   "woopsie_creations_arcade_games_arcade_part_1": "Nous travaillons actuellement à la construction d'une arcade, qui proposera une collection de jeux.",
   "woopsie_creations_arcade_games_arcade_part_2": "Elle est actuellement constituée d'une Rock Pi 4 Plus, où les jeux tournent sans accroc, et nous prévoyons de l'améliorer davantage avec des composants hardware, un système d'exploitation dédié et la possibilité pour quiconque d'ajouter leurs propres jeux (en Assembleur bien sûr).",
-  "woopsie_creations_arcade_games_game_list_intro": "Et voici une liste de jeux sur lesquels nous travaillons, en Assembleur x86 16 bits pur."
+  "woopsie_creations_arcade_games_game_list_intro": "Et voici une liste de jeux sur lesquels nous travaillons, en Assembleur x86 16 bits pur.",
+  "view_more_button": "Voir plus",
+  "view_repo_button": "Voir le repo",
+  "tools": "Outils",
+  "skills": [
+    {
+        "name": "HTML",
+        "image": "arsenal/languageHtml.png"
+    },
+    {
+        "name": "CSS",
+        "image": "arsenal/languageCss.png"
+    },
+    {
+        "name": "JavaScript",
+        "image": "arsenal/languageJs.png"
+    },
+    {
+        "name": "TypeScript",
+        "image": "arsenal/languageTs.png"
+    },
+    {
+        "name": "React",
+        "image": "arsenal/languageReact.png"
+    },
+    {
+        "name": "Vite",
+        "image": "arsenal/languageVite.png"
+    },
+    {
+        "name": "Assembleur",
+        "image": "arsenal/languageAsm.png"
+    },
+    {
+        "name": "C",
+        "image": "arsenal/languageC.png"
+    },
+    {
+        "name": "C++",
+        "image": "arsenal/languageCpp.png"
+    },
+    {
+        "name": "C#",
+        "image": "arsenal/languageCs.png"
+    },
+    {
+        "name": "Flutter",
+        "image": "arsenal/languageFlutter.png"
+    },
+    {
+        "name": "Python",
+        "image": "arsenal/languagePy.png"
+    },
+    {
+        "name": "Git",
+        "image": "arsenal/toolGit.png"
+    },
+    {
+        "name": "GitHub",
+        "image": "arsenal/toolGithub.png"
+    },
+    {
+        "name": "Figma",
+        "image": "arsenal/toolFigma.png"
+    },
+    {
+        "name": "Aseprite",
+        "image": "arsenal/toolAseprite.png"
+    },
+    {
+        "name": "Trello",
+        "image": "arsenal/toolTrello.png"
+    },
+    {
+        "name": "Windows",
+        "image": "arsenal/toolWin.png"
+    },
+    {
+        "name": "MacOS",
+        "image": "arsenal/toolMac.png"
+    },
+    {
+        "name": "Linux",
+        "image": "arsenal/toolLinux.png"
+    },
+    {
+        "name": "Visual Studio",
+        "image": "arsenal/toolVs.png"
+    },
+    {
+        "name": "Visual Studio Code",
+        "image": "arsenal/toolVscode.png"
+    },
+    {
+        "name": "Unity",
+        "image": "arsenal/toolUnity.png"
+    }
+  ],
+  "projects": [
+    {
+        "title": "Path Quick",
+        "image": "pathQuickImage.png",
+        "description": "Ce projet vise à créer un outil logiciel qui calcule l'itinéraire le plus rapide entre deux points de repère, en gérant efficacement de grands ensembles de données.",
+        "enhancedDescription": "Path Quick est un outil qui calcule l'itinéraire le plus rapide entre deux points de repère. Construit en C++, il est conçu pour gérer de grands ensembles de données (testé avec un document .csv de 24 millions de nœuds) et traiter les calculs algorithmiques en moins d'une seconde. Les calculs sont effectués dans son propre serveur local dédié, où il gère les requêtes API et peut produire des résultats au format JSON ou XML.",
+        "technologiesUsed": ["C++", "API", "JSON", "XML"],
+        "tags": ["C++", "API", "Algorithmes"],
+        "linkToRepo": "https://github.com/EnzoGuillouche/2024-2025-project-3-quickest-path-team-6"
+    },
+    {
+        "title": "StellarDynamics",
+        "image": "stellarDynamicsImage.png",
+        "description": "StellarDynamics est une simulation 3D interactive du système solaire prenant en compte des facteurs tels que la masse, la vitesse et les forces gravitationnelles.",
+        "enhancedDescription": "StellarDynamics est une simulation immersive du système solaire en 3D construite avec VPython, donnant vie à la mécanique céleste grâce à une physique réaliste. Les planètes orbitent autour du Soleil en fonction de la masse, de la vitesse et des interactions gravitationnelles, tandis qu'un système de caméra intuitif vous permet d'explorer l'espace sous tous les angles.",
+        "technologiesUsed": ["Python", "VPython"],
+        "tags": ["Python", "Simulation 3D", "Physique"],
+        "linkToRepo": "https://github.com/EnzoGuillouche/StellarDynamics"
+
+    },
+    {
+        "title": "Frogger FPGA",
+        "image": "froggerImage.png",
+        "description": "Ce projet vise à créer un jeu Frogger en utilisant la technologie FPGA. Nous avons aussi créé Lilypad, une console et des manettes pour jouer au jeu.",
+        "enhancedDescription": "Frogger FPGA vise à créer le jeu classique Frogger en utilisant la technologie FPGA, avec une Go-Board. Nous gérons les inputs, l'affichage à l'écran et même la gestion de la mémoire en utilisant Verilog. Nous avons aussi créé Lilypad, une console conçue pour jouer au jeu.",
+        "technologiesUsed": ["FPGA", "Verilog"],
+        "tags": ["FPGA", "GameDev", "Console", "Programmation bas niveau"],
+        "linkToRepo": "https://github.com/EnzoGuillouche/2024-2025-project-1-fpga-team-6"
+    },
+    {
+        "title": "Pixel Showdown",
+        "image": "pixelShowdownImage.png",
+        "description": "Ce jeu est un jeu de combat en 2D avec des graphismes en pixel art et est conçu comme étant un mélange de jeux de combat classiques et de jeux de combat plateformer.",
+        "enhancedDescription": "Pixel Showdown est un jeu de combat en 2D, avec des vies et des barres de santé. Le projet a commencé en C++ en utilisant SFML, mais a ensuite été déplacé vers Unity pour de meilleures performances et une facilité d'utilisation.",
+        "technologiesUsed": ["C#", "Unity", "Aseprite"],
+        "tags": ["Jeu de combat", "GameDev", "PixelArt"],
+        "linkToRepo": "https://github.com/EnzoGuillouche/PixelShowdown"
+    },
+    {
+        "title": "Processeur Virtuel IAT2",
+        "image": "virtualProcessorImage.png",
+        "description": "Ce projet implique la création d'un nouveau langage Assembleur pour une meilleure compréhension et utilisabilité, exécuté par un processeur virtuel.",
+        "enhancedDescription": "IAT2 implique la création d'un nouveau langage Assembleur, AT2. Nous avons développé son assembleur dédié, 2AT2, ainsi que son processeur virtuel VAT2.",
+        "technologiesUsed": ["C", "Assembleur", "C++"],
+        "tags": ["Processeur Virtuel", "Assembleur", "Programmation bas niveau"],
+        "linkToRepo": "https://github.com/EnzoGuillouche/2023-2024-project-3-virtual-processor-team-2"
+    },
+    {
+        "title": "Pac-ssembly",
+        "image": "pacssemblyImage.png",
+        "description": "Ce projet est dédié à la recréation du jeu emblématique Pac-man. Nous avons ajouter un mode 2-joueurs.", 
+        "enhancedDescription": "Pac-ssembly est un remake moderne du jeu classique Pac-man, refait entièrement en Assembleur x86 16-bit avancé en utilisant NASM et DOSBox. Un second joueur peut jouer, contrôlant alors les fantômes.",
+        "technologiesUsed": ["Assembleur x86", "NASM", "DOSBox"],
+        "tags": ["Assembleur", "GameDev", "Retro", "Programmation bas niveau"],
+        "linkToRepo": "https://github.com/Woopsie-Creations/Arcade-games/tree/main/Games/Pac-ssembly"
+    },
+    {
+        "title": "Pok-assembly",
+        "image": "pokassemblyImage.png",
+        "description": "Le projet est dédié à la création de jeu pour faire des combats classiques des jeux Pokémon. Les joueurs peuvent constituer leur propre équipe et s'affronter.",
+        "enhancedDescription": "Pok-assembly est un remake moderne des combats classiques des jeux Pokémon, refait en entièreté en Assembleur x86 16-bit avancé en utilisant NASM et DOSBox. Le jeu prend en compte les avantages de type, les attaques, les statistiques et les effets de statut.",
+        "technologiesUsed": ["Assembleur x86", "NASM", "DOSBox"],
+        "tags": ["Assembleur", "GameDev", "Retro", "Programmation bas niveau"],
+        "linkToRepo": "https://github.com/Woopsie-Creations/Arcade-games/tree/main/Games/Pok-assembly"
+    }
+  ]
 }

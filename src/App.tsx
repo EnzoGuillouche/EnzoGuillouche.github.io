@@ -1,6 +1,7 @@
 import './App.css';
 import BookContainer from './Book/BookContainer';
 import Header from './Header/Header';
+import SkillContainer from './Arsenal/SkillContainer';
 import WoopsieCreations from './WoopsieCreations/WoopsieCreations';
 import { useTranslation } from "react-i18next";
 
@@ -21,6 +22,22 @@ function App() {
       >
         {t("cv_button")}
       </a>
+
+      <div className='Tech-Arsenal'>
+
+        <h1>{t("tech_arsenal")}</h1>
+
+        <SkillContainer skillIds={[6, 7, 8, 9, 10, 11]}></SkillContainer>
+
+        <h2>Web</h2>
+
+        <SkillContainer skillIds={[0, 1, 2, 3, 4, 5]}></SkillContainer>
+
+        <h2>{t("tools")}</h2>
+
+        <SkillContainer skillIds={[12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]}></SkillContainer>
+
+      </div>
 
       <h1>{t("my_projects")}</h1>
 
