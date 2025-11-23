@@ -8,12 +8,22 @@ function WoopsieCreations() {
     return (
         <div className="Woopsie-Content">
             <h1>{t("woopsie_creations_holdup")}</h1>
-            <a href="https://github.com/Woopsie-Creations" target="_blank" rel="noopener noreferrer">
-                <img className="Woop-img" src="woopsiecreationslogo.png" alt="WoopImg" />
-            </a>
+            <img className="Woop-img" src="woopsiecreationslogo.png" alt="WoopImg" />
             <p className="Woop-subheadline">
                 {t("woopsie_creations_intro")}
             </p>
+
+            <div className="App-Socials">
+                <a className="App-Link" target='_blank' rel="noopener noreferrer" href={t("socials.woopsithub.link")}>
+                    <img src={t("socials.woopsithub.image")} alt="socialImage" />
+                    <span>{t("socials.woopsithub.label")}</span>
+                </a>
+                <a className="App-Link" target='_blank' rel="noopener noreferrer" href={t("socials.woopsemail.link")}>
+                    <img src={t("socials.woopsemail.image")} alt="socialImage" />
+                    <span>{t("socials.woopsemail.label")}</span>
+                </a>
+            </div>
+
             <div className="Woop-Arcade-Games">
                 <h2>Arcade-Games</h2>
                 <p className="Woop-subheadline">

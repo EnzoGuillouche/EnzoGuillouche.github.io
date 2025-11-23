@@ -13,6 +13,33 @@
   "view_more_button": "Voir plus",
   "view_repo_button": "Voir le repo",
   "tools": "Outils",
+  "socials": {
+    "github": {
+        "label": "Voir mon GitHub",
+        "image": "arsenal/toolGithub.png",
+        "link": "https://github.com/EnzoGuillouche"
+    },
+    "linkedin": {
+        "label": "Voir mon LinkedIn",
+        "image": "arsenal/toolLinkedin.png",
+        "link": "https://www.linkedin.com/in/enzoguillouche"
+    },
+    "email": {
+        "label": "Envoyez-moi un email",
+        "image": "arsenal/toolMail.png",
+        "link": "mailto:enzoguillouche@gmail.com?subject=Demande%20de%20contact&body=Bonjour%20!%20J'ai%20vu%20votre%20profil,%20et%20me%20voilà%20donc..."
+    },
+    "woopsithub": {
+        "label": "Voir notre GitHub",
+        "image": "arsenal/toolGithub.png",
+        "link": "https://github.com/Woopsie-Creations"
+    },
+    "woopsemail": {
+        "label": "Envoyez-nous un email",
+        "image": "arsenal/toolMail.png",
+        "link": "mailto:contact.woopsiecreations@gmail.com?subject=Demande%20de%20contact&body=Bonjour%20!%20J%27ai%20découvert%20Woopsie%20Creations,%20et%20c%27est%20pour%20cela%20que%20je%20vous%20contacte%20aujourd%27hui..."
+    }
+  },
   "skills": [
     {
         "name": "HTML",
@@ -125,7 +152,6 @@
         "technologiesUsed": ["Python", "VPython"],
         "tags": ["Python", "Simulation 3D", "Physique"],
         "linkToRepo": "https://github.com/EnzoGuillouche/StellarDynamics"
-
     },
     {
         "title": "Frogger FPGA",

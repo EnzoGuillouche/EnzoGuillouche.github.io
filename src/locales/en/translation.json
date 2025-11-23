@@ -13,6 +13,33 @@
   "view_more_button": "View more",
   "view_repo_button": "View Repository",
   "tools": "Tools",
+  "socials": {
+    "github": {
+        "label": "Check my GitHub",
+        "image": "arsenal/toolGithub.png",
+        "link": "https://github.com/EnzoGuillouche"
+    },
+    "linkedin": {
+        "label": "Check my LinkedIn",
+        "image": "arsenal/toolLinkedin.png",
+        "link": "https://www.linkedin.com/in/enzoguillouche"
+    },
+    "email": {
+        "label": "Send me an email",
+        "image": "arsenal/toolMail.png",
+        "link": "mailto:enzoguillouche@gmail.com?subject=Hello%20there&body=I%20checked%20your%20profile,%20and%20I%20wanted%20to%20contact%20you..."
+    },
+    "woopsithub": {
+        "label": "Check our GitHub",
+        "image": "arsenal/toolGithub.png",
+        "link": "https://github.com/Woopsie-Creations"
+    },
+    "woopsemail": {
+        "label": "Send us an email",
+        "image": "arsenal/toolMail.png",
+        "link": "mailto:contact.woopsiecreations@gmail.com?subject=Hello%20there&body=I%20discovered%20Woopsie%20Creations,%20and%20I%20wanted%20to%20contact%20you..."
+    }
+  },
   "skills": [
     {
         "name": "HTML",

@@ -81,6 +81,7 @@
 .Modal-Link:hover {
   background-color: #51a6a7;
   color: #CEFDFE;
+  transform: translateY(-5px);
 }
 
 .Modal-Tags {

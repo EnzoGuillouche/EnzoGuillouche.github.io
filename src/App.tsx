@@ -15,6 +15,21 @@ function App() {
         {t("intro")}
       </p>
 
+      <div className="App-Socials">
+        <a className="App-Link" target='_blank' rel="noopener noreferrer" href={t("socials.github.link")}>
+          <img src={t("socials.github.image")} alt="socialImage" />
+          <span>{t("socials.github.label")}</span>
+        </a>
+        <a className="App-Link" target='_blank' rel="noopener noreferrer" href={t("socials.linkedin.link")}>
+          <img src={t("socials.linkedin.image")} alt="socialImage" />
+          <span>{t("socials.linkedin.label")}</span>
+        </a>
+        <a className="App-Link" target='_blank' rel="noopener noreferrer" href={t("socials.email.link")}>
+          <img src={t("socials.email.image")} alt="socialImage" />
+          <span>{t("socials.email.label")}</span>
+        </a>
+      </div>
+
       <a 
         className="App-Link"
         href='/EnzoGUILLOUCHE_CV.pdf'
