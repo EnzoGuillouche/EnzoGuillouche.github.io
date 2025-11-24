@@ -66,7 +66,15 @@
         "image": "arsenal/languageVite.png"
     },
     {
-        "name": "Assembly",
+        "name": "PHP",
+        "image": "arsenal/languagePhp.png"
+    },
+    {
+        "name": "Symfony",
+        "image": "arsenal/languageSymfony.png"
+    },
+    {
+        "name": "Assembly x86",
         "image": "arsenal/languageAsm.png"
     },
     {
