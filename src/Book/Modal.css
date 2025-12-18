@@ -23,6 +23,7 @@
   border-radius: 12px;
   position: relative;
   animation: modalPop 0.25s ease-out;
+  text-shadow: none;
 }
 
 .Modal-Content {

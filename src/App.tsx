@@ -4,7 +4,6 @@ import Header from './Header/Header';
 import SkillContainer from './Arsenal/SkillContainer';
 import WoopsieCreations from './WoopsieCreations/WoopsieCreations';
 import { useTranslation } from "react-i18next";
-// import { Outlet } from 'react-router-dom';
 
 function App() {
   const { t } = useTranslation();
@@ -55,11 +54,8 @@ function App() {
 
       </div>
 
-      {/* <a className='App-Link' href="/ProjectsPage"><span>{t("my_projects")}</span></a> */}
       <h1>{t("my_projects")}</h1>
       <BookContainer projectIds={[0, 1, 2, 3, 4]} />
-
-      {/* <Outlet /> */}
 
       <WoopsieCreations/>
 

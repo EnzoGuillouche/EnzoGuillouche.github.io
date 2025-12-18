@@ -16,6 +16,8 @@
   z-index: 0;
   text-align: center;
   padding: 1rem;
+  box-shadow: var(--primary-color) 5px 5px 10px;
+  text-shadow: none;
 }
 
 .Cover,
@@ -37,11 +39,13 @@
   flex-direction: column;
   gap: 0.8rem;
   text-align: center;
+  box-shadow: var(--primary-color) 5px 5px 10px;
 }
 
 /* Hover animations */
 .Book:hover .Cover {
   transform: rotateY(-70deg);
+  box-shadow: var(--primary-color) 5px 5px 10px;
 }
 
 .Page {
@@ -50,7 +54,6 @@
 
 .Book:hover .Page {
   transform: rotateZ(25deg) rotateX(-30deg) rotateY(-10deg) translateX(100px);
-  box-shadow: 1px 1px 20px #000a;
 }
 
 .Book:hover {
