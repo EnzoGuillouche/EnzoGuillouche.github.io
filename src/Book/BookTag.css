@@ -1,16 +1,12 @@
 .BookTag {
   display: inline-block;
-  background-color: #51a6a7;
-  color: #CEFDFE;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 0.9rem;
   font-weight: 500;
   transition: background-color 0.3s ease;
-}
-
-.BookTag:hover {
-  background-color: #3f8b8c;
 }
 
 @media (max-width: 900px) {

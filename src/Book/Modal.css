@@ -5,7 +5,7 @@
     left: 0; 
     width: 100vw; 
     height: 100vh; 
-    background: rgba(0, 0, 0, 0.45); 
+    background: rgba(0, 0, 0, 0.5); 
     backdrop-filter: blur(2px); 
     display: flex; 
     justify-content: center; 
@@ -15,13 +15,12 @@
 
 /* Modal box */
 .Modal {
-  color: #51a6a7;
-  background: #CEFDFE;
+  color: var(--primary-color);
+  background: var(--secondary-color);
   padding: 2rem;
   width: 900px;
   max-width: 95%;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   position: relative;
   animation: modalPop 0.25s ease-out;
 }
@@ -67,20 +66,20 @@
 
 .Modal-Link {
   display: inline-block;
-  color: #51a6a7;
-  background-color: #CEFDFE;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   text-decoration: none;
   padding: 0.6rem 1rem;
   border-radius: 6px;
-  border: 1px solid #51a6a7;
+  border: 1px solid var(--primary-color);
   margin-top: 0.8rem;
   text-align: center;
   font-weight: bold;
   transition: 0.3s ease;
 }
 .Modal-Link:hover {
-  background-color: #51a6a7;
-  color: #CEFDFE;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   transform: translateY(-5px);
 }
 

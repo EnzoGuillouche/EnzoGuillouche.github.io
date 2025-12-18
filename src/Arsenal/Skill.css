@@ -4,18 +4,19 @@
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    color: #CEFDFE;
-    border: 1px solid #51a6a7;
+    color: var(--secondary-color);
     border-radius: 15%;
     padding: 3%;
-    width: fit-content;
-    height: fit-content;
-    
+    width: 115px;
+    height: 110px;
+    box-shadow: inset 0 0 10px var(--primary-color);
+    justify-content: space-evenly;
 }
 
 .Skill-Name {
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
 }
 
 .Skill-Image {
@@ -27,5 +28,7 @@
 @media (max-width: 600px) {
     .Skill {
         border-radius: 10%;
+        width: 115px;
+        height: 110px;
     }
 }

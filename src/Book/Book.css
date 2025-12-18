@@ -3,14 +3,14 @@
   border-radius: 10px;
   width: clamp(200px, 20vw, 300px); 
   height: clamp(250px, 35vh, 400px);
-  background-color: #CEFDFE;
+  background-color: var(--secondary-color);
   box-shadow: 1px 1px 12px #000;
   transform: preserve-3d;
   perspective: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #51a6a7;
+  color: var(--primary-color);
   transition: transform 0.5s, z-index 0.5s;
   font-size: 1rem;
   z-index: 0;
@@ -23,7 +23,7 @@
   padding: 1rem;
   top: 0;
   position: absolute;
-  background-color: #CEFDFE;
+  background-color: var(--secondary-color);
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -70,10 +70,10 @@
 .Book-Link {
   margin-top: 1rem;
   text-decoration: none;
-  background-color: #CEFDFE;
-  color: #51a6a7;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   font-weight: bold;
-  border: 1px solid #51a6a7;
+  border: 1px solid var(--primary-color);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -81,8 +81,8 @@
 }
 
 .Book-Link:hover {
-  background-color: #51a6a7;
-  color: #CEFDFE;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   transform: translateY(-5px);
 }
 
