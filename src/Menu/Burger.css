@@ -1,0 +1,41 @@
+.App-Burger {
+  position: absolute;
+  top: 5%;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.App-Burger:hover div {
+    background-color: var(--secondary-color-but-darker);
+}
+
+.App-Burger div {
+    width: 2rem;
+    height: 0.25rem;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+.App-Burger.open div:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.App-Burger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.App-Burger.open div:nth-child(3) {
+  transform: rotate(-45deg);
+}

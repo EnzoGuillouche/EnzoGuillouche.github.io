@@ -1,7 +1,7 @@
 :root {
   --primary-color: #863bae;
   --secondary-color: #faf2e5;
-  --secondary-color_but_darker: #847e74;
+  --secondary-color-but-darker: #847e74;
   --font-color: var(--secondary-color);
 }
 
