@@ -31,3 +31,13 @@
         opacity 0.5s ease-in-out,
         visibility 0s linear 0s; /* visible immediately */
 }
+
+@media (max-width: 600px) {
+    .App-FloatingMenu {
+        top: 1rem;
+        left: 1rem;
+        padding: 1rem;
+        padding-top: 4rem;
+        border-radius: 1rem;
+    }
+}

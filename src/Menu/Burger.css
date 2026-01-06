@@ -47,3 +47,17 @@
 .App-Burger.open div:nth-child(3) {
   transform: rotate(-45deg);
 }
+
+@media (max-width: 600px) {
+  .App-Burger {
+    top: 2rem;
+    left: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .App-Burger div {
+    width: 1.5rem;
+    height: 0.2rem;
+  }
+}
