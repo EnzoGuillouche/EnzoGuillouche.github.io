@@ -1,7 +1,7 @@
 .App-Burger {
-  position: absolute;
-  top: 5%;
-  left: 2rem;
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -26,6 +26,14 @@
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
+}
+
+.App-Burger.open div {
+  background: var(--primary-color);
+}
+
+.App-Burger.open:hover div {
+  background: var(--secondary-color-but-darker);
 }
 
 .App-Burger.open div:nth-child(1) {

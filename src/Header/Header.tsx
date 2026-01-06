@@ -1,7 +1,7 @@
 import './Header.css';
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
-// import FloatingMenu from '../Menu/FloatingMenu';
+import FloatingMenu from '../Menu/FloatingMenu';
 import Burger from '../Menu/Burger';
 
 function Header() {
@@ -15,7 +15,7 @@ function Header() {
               {t("title")}
             </p>
             <Burger open={open} setOpen={setOpen} />
-            {/* <FloatingMenu /> */}
+            <FloatingMenu open={open} /> 
         </header>
     );
 }
