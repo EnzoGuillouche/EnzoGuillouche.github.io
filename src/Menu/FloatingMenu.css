@@ -1,19 +1,33 @@
 .App-FloatingMenu {
-    display: none;
-}
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 
-.App-FloatingMenu.open {
-    display: block;
+    transition:
+        opacity 0.5s ease-in-out,
+        visibility 0s linear 0.5s; /* delay hiding until fade-out ends */
+
     position: fixed;
     z-index: 9;
+    top: 2rem;
+    left: 2rem;
+
     width: fit-content;
     height: fit-content;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    top: 2rem;
-    left: 2rem;
     padding: 2rem;
     padding-top: 5rem;
     border-radius: 2rem;
     box-shadow: 0 4px 8px var(--primary-color);
+}
+
+.App-FloatingMenu.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transition:
+        opacity 0.5s ease-in-out,
+        visibility 0s linear 0s; /* visible immediately */
 }
