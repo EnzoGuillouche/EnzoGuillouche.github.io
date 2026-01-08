@@ -55,11 +55,13 @@ function Modal({ isOpen, onClose, projectId }: ModalProps) {
             </div>
 
             <div className="Modal-Right">
-               <img
-                    src={project.image}
-                    className="Modal-Image"
-                    alt={`Project Img`}
-                />
+                {project.image && (
+                    <img
+                        src={project.image}
+                        className="Modal-Image"
+                        alt={`Project Img`}
+                    />
+                )}
             </div>
         </div>
       </div>

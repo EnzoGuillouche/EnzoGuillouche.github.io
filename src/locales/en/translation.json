@@ -207,6 +207,15 @@
         "technologiesUsed": ["x86 Assembly", "NASM", "DOSBox"],
         "tags": ["Assembly", "GameDev", "Retro", "Low Level Programming"],
         "linkToRepo": "https://github.com/Woopsie-Creations/Arcade-games/tree/main/Games/Pok-assembly"
+    },
+    {
+        "title": "x86 NASM libraries",
+        "image": "",
+        "description": "This project is dedicated to the development of reusable libraries written in x86 Assembly language (NASM).", 
+        "enhancedDescription": "This project is dedicated to the development of reusable libraries written in x86 Assembly language (NASM). Those libraries aim to provide essential functionalities for game development (or else), such as easier graphics rendering and input handling, facilitating the creation of games in Assembly language.",
+        "technologiesUsed": ["x86 Assembly", "NASM", "DOSBox"],
+        "tags": ["Assembly", "Low Level Programming", "Libraries"],
+        "linkToRepo": "https://github.com/Woopsie-Creations/x86-nasm-libraries/wiki"
     }
   ]
 }
