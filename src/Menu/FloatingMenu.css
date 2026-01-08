@@ -32,6 +32,23 @@
         visibility 0s linear 0s; /* visible immediately */
 }
 
+.App-menu-item {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    font-style: italic;
+}
+
+.App-menu-item:hover {
+    font-weight: bold;
+}
+
+.App-menu-item.active {
+    font-weight: bold;
+    text-shadow: 5px 5px 15px var(--primary-color);
+}
+
 @media (max-width: 600px) {
     .App-FloatingMenu {
         top: 1rem;
