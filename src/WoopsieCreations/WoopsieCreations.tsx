@@ -1,9 +1,11 @@
 import "./WoopsieCreations.css";
 import BookContainer from './../Book/BookContainer';
 import { useTranslation } from "react-i18next";
+import jsonVariables from '../locales/jsonVariables.json';
 
 function WoopsieCreations() {
     const { t } = useTranslation();
+    const projects = jsonVariables.projects;
 
     return (
         <div className="Woopsie-Content">
@@ -41,7 +43,7 @@ function WoopsieCreations() {
                 <p className="Woop-subheadline">
                     {t("woopsie_creations_arcade_games_game_list_intro")}
                 </p>
-                <BookContainer projectIds={[5, 6]}/>
+                <BookContainer projectIds={projects.woopsie}/>
             </div>
         </div>
     );

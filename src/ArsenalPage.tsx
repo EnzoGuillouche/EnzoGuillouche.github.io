@@ -1,19 +1,21 @@
 import SkillContainer from './Arsenal/SkillContainer';
 import { useTranslation } from "react-i18next";
 import Header from './Header/Header';
+import jsonVariables from './locales/jsonVariables.json';
 
 function ArsenalPage() {
     const { t } = useTranslation();
+    const skills = jsonVariables.skills;
     return (
         <div className="App Tech-Arsenal">
             <Header/>
             <h1>{t("tech_arsenal")}</h1>
-            <SkillContainer skillIds={[8, 9, 10, 11, 12, 13]}></SkillContainer>
+            <SkillContainer skillIds={skills.overall}></SkillContainer>
 
             <h2>Web</h2>
-            <SkillContainer skillIds={[0, 1, 2, 3, 4, 5, 6, 7]}></SkillContainer>
+            <SkillContainer skillIds={skills.web}></SkillContainer>
             <h2>{t("tools")}</h2>
-            <SkillContainer skillIds={[14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]}></SkillContainer>
+            <SkillContainer skillIds={skills.tools}></SkillContainer>
 
         </div>
     );
