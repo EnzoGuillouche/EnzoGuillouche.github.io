@@ -1,9 +1,11 @@
 {
+  "home_page": "Home Page",
+  "my_projects": "My Projects",
+  "tech_arsenal": "Tech Arsenal",
+  "about_page": "About Me",
   "title": "Challenge-oriented Full-Stack Developer",
   "intro": "I’m a passionate software developer, with a strong curiosity for technology and a deep enthusiasm for creating innovative projects.",
   "cv_button": "My CV",
-  "tech_arsenal": "Tech Arsenal",
-  "my_projects": "My Projects",
   "woopsie_creations_holdup": "But there's more!",
   "woopsie_creations_intro": "With friends of mine, we co-founded Woopsie Creations, a passionate indie game and software development studio.",
   "woopsie_creations_arcade_games_intro": "Arcade-Games is a project dedicated to creating games written in x86 16-bit Assembly, developed using NASM and executed with DOSBox.",

@@ -1,7 +1,8 @@
 import React, { createContext, useContext, useState } from 'react';
 import HomePage from './HomePage';
-// import AboutPage from './AboutPage/AboutPage';
 import ProjectPage from './ProjectPage';
+import ArsenalPage from './ArsenalPage';
+import AboutPage from './AboutPage';
 
 const PageContext = createContext<any>(null);
 
@@ -20,9 +21,12 @@ export function PageProvider({ children }: { children: React.ReactNode }) {
       case 2:
         setPage(<ProjectPage />)
         break;
-    //   case 3:
-    //     setPage(<AboutPage />)
-    //     break;
+      case 3:
+        setPage(<ArsenalPage />)
+        break;
+      case 4:
+        setPage(<AboutPage />)
+        break;
     }
     setActive(pageNum);
   }

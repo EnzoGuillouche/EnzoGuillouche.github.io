@@ -10,7 +10,7 @@ function App() {
     return (
         <div>
             <Burger open={open} setOpen={setOpen} />
-            <FloatingMenu open={open} /> 
+            <FloatingMenu open={open} shutMenu={() => setOpen(false)} /> 
             {pageInfo.page}
         </div>
     );
