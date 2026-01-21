@@ -191,6 +191,15 @@
         "linkToRepo": "https://github.com/EnzoGuillouche/2023-2024-project-3-virtual-processor-team-2"
     },
     {
+        "title": "Ray-TraC",
+        "image": "raytrac.png",
+        "description": "This project involves the understandig and manipulation of ray tracing in C.", 
+        "enhancedDescription": "Ray-TraC generates entites, with at least 1 as a light source. The program will compute every mathematical nightmare embedded in itself to simulate graphically light and shadow (basic ray-tracing).",
+        "technologiesUsed": ["C", "Ray tracing", "Raylib"],
+        "tags": ["Maths", "Ray Tracing", "Low Level Programming"],
+        "linkToRepo": "https://github.com/EnzoGuillouche/Ray-traC"
+    },
+    {
         "title": "Pac-ssembly",
         "image": "pacssemblyImage.png",
         "description": "The project is dedicated to recreating the original Pac-man game. We added a 2-player mode.", 

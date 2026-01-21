@@ -16,7 +16,7 @@ function HomePage() {
         </p>
 
         <h1>{t("my_projects")}</h1>
-        <BookContainer projectIds={[0, 1, 4]} />
+        <BookContainer projectIds={[0, 1, 5]} />
 
         <div className='App-Link App-Button' onClick={() => ChangePage(2)}>
             {t("woopsie_creations_holdup")}
