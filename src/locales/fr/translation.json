@@ -1,6 +1,8 @@
 {
   "home_page": "Page d'accueil",
   "my_projects": "Mes Projets",
+  "my_school_projects": "Mes Projets",
+  "my_experience": "Mes Expériences Professionnelles",
   "tech_arsenal": "Arsenal Technique",
   "about_page": "À Propos de Moi",
   "title": "Développeur Full-Stack en quête de challenges",
@@ -148,6 +150,7 @@
     {
         "title": "Path Quick",
         "image": "pathQuickImage.png",
+        "context": "School",
         "description": "Ce projet vise à créer un outil logiciel qui calcule l'itinéraire le plus rapide entre deux points de repère, en gérant efficacement de grands ensembles de données.",
         "enhancedDescription": "Path Quick est un outil qui calcule l'itinéraire le plus rapide entre deux points de repère. Construit en C++, il est conçu pour gérer de grands ensembles de données (testé avec un document .csv de 24 millions de nœuds) et traiter les calculs algorithmiques en moins d'une seconde. Les calculs sont effectués dans son propre serveur local dédié, où il gère les requêtes API et peut produire des résultats au format JSON ou XML.",
         "technologiesUsed": ["C++", "API", "JSON", "XML"],
@@ -157,6 +160,7 @@
     {
         "title": "StellarDynamics",
         "image": "stellarDynamicsImage.png",
+        "context": "Perso",
         "description": "StellarDynamics est une simulation 3D interactive du système solaire prenant en compte des facteurs tels que la masse, la vitesse et les forces gravitationnelles.",
         "enhancedDescription": "StellarDynamics est une simulation immersive du système solaire en 3D construite avec VPython, donnant vie à la mécanique céleste grâce à une physique réaliste. Les planètes orbitent autour du Soleil en fonction de la masse, de la vitesse et des interactions gravitationnelles, tandis qu'un système de caméra intuitif vous permet d'explorer l'espace sous tous les angles.",
         "technologiesUsed": ["Python", "VPython"],
@@ -166,6 +170,7 @@
     {
         "title": "Frogger FPGA",
         "image": "froggerImage.png",
+        "context": "School",
         "description": "Ce projet vise à créer un jeu Frogger en utilisant la technologie FPGA. Nous avons aussi créé Lilypad, une console et des manettes pour jouer au jeu.",
         "enhancedDescription": "Frogger FPGA vise à créer le jeu classique Frogger en utilisant la technologie FPGA, avec une Go-Board. Nous gérons les inputs, l'affichage à l'écran et même la gestion de la mémoire en utilisant Verilog. Nous avons aussi créé Lilypad, une console conçue pour jouer au jeu.",
         "technologiesUsed": ["FPGA", "Verilog"],
@@ -175,6 +180,7 @@
     {
         "title": "Pixel Showdown",
         "image": "pixelShowdownImage.png",
+        "context": "School",
         "description": "Ce jeu est un jeu de combat en 2D avec des graphismes en pixel art et est conçu comme étant un mélange de jeux de combat classiques et de jeux de combat plateformer.",
         "enhancedDescription": "Pixel Showdown est un jeu de combat en 2D, avec des vies et des barres de santé. Le projet a commencé en C++ en utilisant SFML, mais a ensuite été déplacé vers Unity pour de meilleures performances et une facilité d'utilisation.",
         "technologiesUsed": ["C#", "Unity", "Aseprite"],
@@ -184,6 +190,7 @@
     {
         "title": "Processeur Virtuel IAT2",
         "image": "virtualProcessorImage.png",
+        "context": "School",
         "description": "Ce projet implique la création d'un nouveau langage Assembleur pour une meilleure compréhension et utilisabilité, exécuté par un processeur virtuel.",
         "enhancedDescription": "IAT2 implique la création d'un nouveau langage Assembleur, AT2. Nous avons développé son assembleur dédié, 2AT2, ainsi que son processeur virtuel VAT2.",
         "technologiesUsed": ["C", "Assembleur", "C++"],
@@ -193,6 +200,7 @@
     {
         "title": "Ray-TraC",
         "image": "raytrac.png",
+        "context": "Perso",
         "description": "Ce projet porte sur la compréhension et la manipulation du ray-tracing en C.", 
         "enhancedDescription": "Ray-TraC génère des entités, donc au moins une étant une source lumineuse. Le programme calcule toutes les opérations mathématiques qu'il contient afin de simuler graphiquement la lumière et les ombres (ray-tracing de base).",
         "technologiesUsed": ["C", "Ray tracing", "Raylib"],
@@ -202,6 +210,7 @@
     {
         "title": "Pac-ssembly",
         "image": "pacssemblyImage.png",
+        "context": "Woopsie Creations",
         "description": "Ce projet est dédié à la recréation du jeu emblématique Pac-man. Nous avons ajouter un mode 2-joueurs.", 
         "enhancedDescription": "Pac-ssembly est un remake moderne du jeu classique Pac-man, refait entièrement en Assembleur x86 16-bit avancé en utilisant NASM et DOSBox. Un second joueur peut jouer, contrôlant alors les fantômes.",
         "technologiesUsed": ["Assembleur x86", "NASM", "DOSBox"],
@@ -211,6 +220,7 @@
     {
         "title": "Pok-assembly",
         "image": "pokassemblyImage.png",
+        "context": "Woopsie Creations",
         "description": "Le projet est dédié à la création de jeu pour faire des combats classiques des jeux Pokémon. Les joueurs peuvent constituer leur propre équipe et s'affronter.",
         "enhancedDescription": "Pok-assembly est un remake moderne des combats classiques des jeux Pokémon, refait en entièreté en Assembleur x86 16-bit avancé en utilisant NASM et DOSBox. Le jeu prend en compte les avantages de type, les attaques, les statistiques et les effets de statut.",
         "technologiesUsed": ["Assembleur x86", "NASM", "DOSBox"],
@@ -220,11 +230,31 @@
     {
         "title": "Librairies NASM x86",
         "image": "",
+        "context": "Woopsie Creations",
         "description": "Ce projet est dédié au développement de librairies réutilisables écrites en langage d'assembleur x86 (NASM).", 
         "enhancedDescription": "Ce projet est dédié au développement de librairies réutilisables écrites en langage d'assembleur x86 (NASM). Ces bibliothèques visent à fournir des fonctionnalités essentielles pour le développement de jeux (ou autre), telles qu'un rendu graphique plus simple et une gestion des inputs, facilitant ainsi la création de jeux en langage d'assembleur.",
         "technologiesUsed": ["Assembleur x86", "NASM", "DOSBox"],
         "tags": ["Assembleur", "Programmation bas niveau", "Librairies"],
         "linkToRepo": "https://github.com/Woopsie-Creations/x86-nasm-libraries/wiki"
+    },
+    {
+        "title": "Gymbro",
+        "image": "",
+        "context": "Perso",
+        "description": "Ce projet est une application mobile faite en Flutter pour manager tes séances de sport.", 
+        "enhancedDescription": "Ce projet est une application mobile faite en Flutter pour manager tes séances de sport, avec planning, minuteurs, notifications hebdomadaires, exercices expliqués avec catégories.",
+        "technologiesUsed": ["Flutter", "Dart"],
+        "tags": ["Flutter", "Mobile", "Sport"],
+        "linkToRepo": "https://github.com/EnzoGuillouche/GymBro"
+    }
+  ],
+  "experiences": [
+    {
+        "title": "Alternance chez Libetlou",
+        "description": "Développement web, management, amélioration applications métiers",
+        "company": "Libetlou",
+        "start_date": "01/12/2025",
+        "end_date": "Présent"
     }
   ]
 }

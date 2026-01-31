@@ -22,9 +22,12 @@ function FloatingMenu({ open, shutMenu }: MenuProps) {
                 {t("my_projects")}
             </div>
             <div className={`App-menu-item ${currentPage === 3 ? "active" : ""}`} onClick={()=>{ChangePage(3); shutMenu()}} onMouseEnter={setHover(true)} onMouseLeave={setHover(false)}>
-                {t("tech_arsenal")}
+                {t("my_experience")}
             </div>
             <div className={`App-menu-item ${currentPage === 4 ? "active" : ""}`} onClick={()=>{ChangePage(4); shutMenu()}} onMouseEnter={setHover(true)} onMouseLeave={setHover(false)}>
+                {t("tech_arsenal")}
+            </div>
+            <div className={`App-menu-item ${currentPage === 5 ? "active" : ""}`} onClick={()=>{ChangePage(5); shutMenu()}} onMouseEnter={setHover(true)} onMouseLeave={setHover(false)}>
                 {t("about_page")}
             </div>
         </div>

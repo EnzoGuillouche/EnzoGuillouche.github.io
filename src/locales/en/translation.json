@@ -1,6 +1,8 @@
 {
   "home_page": "Home Page",
   "my_projects": "My Projects",
+  "my_school_projects": "My School Projects",
+  "my_experience": "My Professional Experience",
   "tech_arsenal": "Tech Arsenal",
   "about_page": "About Me",
   "title": "Challenge-oriented Full-Stack Developer",
@@ -148,6 +150,7 @@
     {
         "title": "Path Quick",
         "image": "pathQuickImage.png",
+        "context": "School",
         "description": "This project aims to create a software tool that calculates the fastest route between two landmarks, handling large datasets efficiently.",
         "enhancedDescription": "Path Quick is a tool that calculates the fastest route between two landmarks. Built in C++, it is meant to handle large datasets (tested with a 24 Million node .csv document), and process the algorithms under a second. The calculations are made in its own dedicated local server, where it handles API requests, and can output results in JSON or XML format.",
         "technologiesUsed": ["C++", "API", "JSON", "XML"],
@@ -157,6 +160,7 @@
     {
         "title": "StellarDynamics",
         "image": "stellarDynamicsImage.png",
+        "context": "Perso",
         "description": "StellarDynamics is an interactive 3D simulation of the solar system with consideration of factors such as mass, velocity, and gravitational forces.", 
         "enhancedDescription": "StellarDynamics is an immersive 3D solar system simulation built with VPython, bringing celestial mechanics to life through realistic physics. Planets orbit the Sun based on mass, velocity, and gravitational interactions, while an intuitive camera system lets you explore space from any angle.",
         "technologiesUsed": ["Python", "VPython"],
@@ -166,6 +170,7 @@
     {
         "title": "Frogger FPGA",
         "image": "froggerImage.png",
+        "context": "School",
         "description": "This project aims to create a Frogger game using the FPGA technology. Besides, we have made Lilypad, a console and controllers to play the game", 
         "enhancedDescription": "Frogger FPGA aims to create the classic Frogger game using the FPGA technology, with a Go-Board. We handle input, output, screen display and even memory management using Verilog. Besides, we have made Lilypad, a console and controllers to play the game.", 
         "technologiesUsed": ["FPGA", "Verilog"],
@@ -175,6 +180,7 @@
     {
         "title": "Pixel Showdown",
         "image": "pixelShowdownImage.png",
+        "context": "School",
         "description": "This game is 2D versus-fighting game with pixel art graphics and is meant to be the mix of classic fighting games and platform ones.", 
         "enhancedDescription": "Pixel Showdown is 2D versus-fighting game, with lives and health bars. The project was begun in C++ using SFML, but later moved to Unity for better performance and ease of use.",
         "technologiesUsed": ["C#", "Unity", "Aseprite"],
@@ -184,6 +190,7 @@
     {
         "title": "Virtual Processor IAT2",
         "image": "virtualProcessorImage.png",
+        "context": "School",
         "description": "This project involves the creation of a new assembly language for enhanced understanding and usability, and executed by a virtual processor.", 
         "enhancedDescription": "IAT2 involves the creation of a new assembly language, AT2. We developed its dedicated assembler 2AT2 and its virtual Processor VAT2.",
         "technologiesUsed": ["C", "Assembly", "C++"],
@@ -193,6 +200,7 @@
     {
         "title": "Ray-TraC",
         "image": "raytrac.png",
+        "context": "Perso",
         "description": "This project involves the understandig and manipulation of ray tracing in C.", 
         "enhancedDescription": "Ray-TraC generates entites, with at least 1 as a light source. The program will compute every mathematical nightmare embedded in itself to simulate graphically light and shadow (basic ray-tracing).",
         "technologiesUsed": ["C", "Ray tracing", "Raylib"],
@@ -202,6 +210,7 @@
     {
         "title": "Pac-ssembly",
         "image": "pacssemblyImage.png",
+        "context": "Woopsie Creations",
         "description": "The project is dedicated to recreating the original Pac-man game. We added a 2-player mode.", 
         "enhancedDescription": "Pac-ssembly is a modern remake of the classic Pac-Man game, rebuilt from the ground up in advanced x86 16-bit Assembly using NASM and executed through DOSBox. A 2nd player can join in, and control the ghosts.",
         "technologiesUsed": ["x86 Assembly", "NASM", "DOSBox"],
@@ -211,6 +220,7 @@
     {
         "title": "Pok-assembly",
         "image": "pokassemblyImage.png",
+        "context": "Woopsie Creations",
         "description": "The project is dedicated to recreating a combat-based game from Pokemon games. Players can build their own team and battle against each other.", 
         "enhancedDescription": "Pok-assembly is a modern remake of the classic combats in Pokemon games, rebuilt from the ground up in advanced x86 16-bit Assembly using NASM and executed through DOSBox. The game takes into account type advantages, moves, stats, and status effects.",
         "technologiesUsed": ["x86 Assembly", "NASM", "DOSBox"],
@@ -220,11 +230,31 @@
     {
         "title": "x86 NASM libraries",
         "image": "",
+        "context": "Woopsie Creations",
         "description": "This project is dedicated to the development of reusable libraries written in x86 Assembly language (NASM).", 
         "enhancedDescription": "This project is dedicated to the development of reusable libraries written in x86 Assembly language (NASM). Those libraries aim to provide essential functionalities for game development (or else), such as easier graphics rendering and input handling, facilitating the creation of games in Assembly language.",
         "technologiesUsed": ["x86 Assembly", "NASM", "DOSBox"],
         "tags": ["Assembly", "Low Level Programming", "Libraries"],
         "linkToRepo": "https://github.com/Woopsie-Creations/x86-nasm-libraries/wiki"
+    },
+    {
+        "title": "Gymbro",
+        "image": "",
+        "context": "Perso",
+        "description": "This project is a mobile application made in Flutter to manage your gym sessions.",
+        "enhancedDescription": "This project is a mobile application made in Flutter to manage your gym sessions, with planning, timers, weekly notifications, explained exercises with categorization.",
+        "technologiesUsed": ["Flutter", "Dart"],
+        "tags": ["Flutter", "Mobile", "Sport"],
+        "linkToRepo": "https://github.com/EnzoGuillouche/GymBro"
+    }
+  ],
+  "experiences": [
+    {
+        "title": "Apprenticeship with Libetlou",
+        "description": "Web development, management, business application enhancement",
+        "company": "Libetlou",
+        "start_date": "12/01/2025",
+        "end_date": "Now"
     }
   ]
 }

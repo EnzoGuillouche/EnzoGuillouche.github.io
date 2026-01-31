@@ -1,6 +1,7 @@
 {
     "projects": {
-        "overall": [0, 1, 2, 3, 4, 5],
+        "overall": [1, 5, 9],
+        "school": [0, 2, 3, 4],
         "woopsie": [6, 7, 8]
     },
     "skills": {
