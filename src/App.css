@@ -57,6 +57,13 @@ h2 {
   align-items: center;
   justify-content: center;
   font-size: clamp(0.9rem, 2vw, 1.3rem);
+  padding-bottom: 1em;
+  margin-bottom: 2rem;
+  
+  border-color: var(--primary-color);
+  border-width: 0.1em;
+  border-radius: 2.5em;
+  border-style: solid;
 }
 
 /* ---------- Responsive adjustments ---------- */
