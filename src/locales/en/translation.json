@@ -204,7 +204,7 @@
         "description": "This project involves the understandig and manipulation of ray tracing in C.", 
         "enhancedDescription": "Ray-TraC generates entites, with at least 1 as a light source. The program will compute every mathematical nightmare embedded in itself to simulate graphically light and shadow (basic ray-tracing).",
         "technologiesUsed": ["C", "Ray tracing", "Raylib"],
-        "tags": ["Maths", "Ray Tracing", "Low Level Programming"],
+        "tags": ["Maths", "Ray tracing", "Low Level Programming"],
         "linkToRepo": "https://github.com/EnzoGuillouche/Ray-traC"
     },
     {
@@ -246,6 +246,16 @@
         "technologiesUsed": ["Flutter", "Dart"],
         "tags": ["Flutter", "Mobile", "Sport"],
         "linkToRepo": "https://github.com/EnzoGuillouche/GymBro"
+    },
+    {
+        "title": "Ray-caster",
+        "image": "raycaster.png",
+        "context": "Perso",
+        "description": "This project involves the understandig and manipulation of ray casting in C.", 
+        "enhancedDescription": "Ray-caster is based on a 2D map, where walls are defined. The program then calculates the distance between the player and each wall in his field of vision to determine the depth at which to display them on screen. (basic ray-tracing).",
+        "technologiesUsed": ["C", "Ray casting", "SDL3"],
+        "tags": ["Maths", "Ray casting", "Low Level Programming"],
+        "linkToRepo": "https://github.com/EnzoGuillouche/Ray-caster"
     }
   ],
   "experiences": [
